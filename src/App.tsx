@@ -384,7 +384,7 @@ const Contact = () => {
                 <div>
                   <p className="text-xs font-bold text-brand-400 uppercase tracking-widest mb-1">Visit Us</p>
                   <p className="text-brand-900 font-bold leading-relaxed">
-                    123 Design Street, Jubilee Hills,<br />
+                    Plot no.281/2, Yosufguda,Venkatagiri, Jubilee Hills,<br />
                     Hyderabad, Telangana 500033
                   </p>
                 </div>
@@ -458,7 +458,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-accent flex items-center justify-center rounded-sm">
                 <span className="text-white font-display font-bold text-lg tracking-tighter">SH</span>
               </div>
-              <span className="font-display font-bold text-xl tracking-tight">SRI HIMAGHNA</span>
+              <span className="font-display font-bold text-xl tracking-tight">SRI HIMAGHNA<br> Interiors & Designing</span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Premium interior design and execution services for residential and commercial spaces.
