@@ -458,7 +458,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-accent flex items-center justify-center rounded-sm">
                 <span className="text-white font-display font-bold text-lg tracking-tighter">SH</span>
               </div>
-              <span className="font-display font-bold text-xl tracking-tight">SRI HIMAGHNA<br> Interiors & Designing</span>
+              <span className="font-display font-bold text-xl tracking-tight">SRI HIMAGHNA <br> Interiors & Designing </span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Premium interior design and execution services for residential and commercial spaces.
