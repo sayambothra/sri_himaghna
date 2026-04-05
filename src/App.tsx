@@ -397,7 +397,7 @@ const Contact = () => {
                 <div>
                   <p className="text-xs font-bold text-brand-400 uppercase tracking-widest mb-1">Visit Us</p>
                   <p className="text-brand-900 font-bold leading-relaxed">
-                    123 Design Street, Jubilee Hills,<br />
+                    Plot no.281/2,Yousufguda,Venkatagiri , Jubilee Hills,<br />
                     Hyderabad, Telangana 500033
                   </p>
                 </div>
