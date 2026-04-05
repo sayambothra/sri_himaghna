@@ -20,6 +20,16 @@ import {
 
 // --- Components ---
 
+const LogoIcon = ({ className = "w-10 h-10" }) => (
+  <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Stylized H bars with subtle curves to match the image */}
+    <path d="M38 20C39 35 39 65 38 80" stroke="#93C5FD" strokeWidth="7" strokeLinecap="round" />
+    <path d="M62 20C61 35 61 65 62 80" stroke="#93C5FD" strokeWidth="7" strokeLinecap="round" />
+    {/* The elegant wave through the middle */}
+    <path d="M25 52C40 35 60 65 75 48" stroke="#1E3A8A" strokeWidth="5" strokeLinecap="round" />
+  </svg>
+);
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,12 +52,15 @@ const Navbar = () => {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass py-4 shadow-sm' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-accent flex items-center justify-center rounded-sm">
-            <span className="text-white font-display font-bold text-xl tracking-tighter">SH</span>
+          <LogoIcon className="w-12 h-12" />
+          <div className="flex flex-col leading-none">
+            <span className={`font-display font-bold text-xl tracking-tight ${isScrolled ? 'text-brand-900' : 'text-brand-900 md:text-white'}`}>
+              SRI HIMAGHNA
+            </span>
+            <span className={`text-[10px] uppercase tracking-[0.2em] font-medium mt-1 ${isScrolled ? 'text-brand-500' : 'text-brand-500 md:text-white/70'}`}>
+              Interiors & Designing
+            </span>
           </div>
-          <span className={`font-display font-bold text-xl tracking-tight ${isScrolled ? 'text-brand-900' : 'text-brand-900 md:text-white'}`}>
-            SRI HIMAGHNA
-          </span>
         </div>
 
         {/* Desktop Nav */}
@@ -365,7 +378,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs font-bold text-brand-400 uppercase tracking-widest mb-1">Call Us</p>
-                  <p className="text-brand-900 font-bold">+91 98765 43210</p>
+                  <p className="text-brand-900 font-bold">+91 </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -384,7 +397,7 @@ const Contact = () => {
                 <div>
                   <p className="text-xs font-bold text-brand-400 uppercase tracking-widest mb-1">Visit Us</p>
                   <p className="text-brand-900 font-bold leading-relaxed">
-                    Plot no.281/2, Yosufguda,Venkatagiri, Jubilee Hills,<br />
+                    123 Design Street, Jubilee Hills,<br />
                     Hyderabad, Telangana 500033
                   </p>
                 </div>
@@ -455,10 +468,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-accent flex items-center justify-center rounded-sm">
-                <span className="text-white font-display font-bold text-lg tracking-tighter">SH</span>
+              <LogoIcon className="w-10 h-10" />
+              <div className="flex flex-col leading-none">
+                <span className="font-display font-bold text-xl tracking-tight">SRI HIMAGHNA</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] font-medium mt-1 text-white/50">
+                  Interiors & Designing
+                </span>
               </div>
-              <span className="font-display font-bold text-xl tracking-tight">SRI HIMAGHNA <br> Interiors & Designing </span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Premium interior design and execution services for residential and commercial spaces.
